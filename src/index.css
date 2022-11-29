@@ -30,4 +30,34 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.texture-selector {
+  bottom: 32px;
+  background-color: #aaa;
+  position: absolute;
+  padding: 8px;
+  border: 2px solid #000;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8px;
+}
+
+.texture-selector img {
+  width: 50px;
+  z-index: 100;
+  image-rendering: pixelated;
+  border: 2px solid #000;
+}
+
+texture-selector.hidden {
+  display: none;
+}
+
+.texture-selector img.selected {
+  border-color: red;
 }
